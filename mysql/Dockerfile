@@ -1,0 +1,3 @@
+FROM mysql:8.0.13
+ENV MYSQL_ROOT_PASSWORD '${DB_ROOT_PASSWORD}'
+COPY my.cnf /etc/mysql/
