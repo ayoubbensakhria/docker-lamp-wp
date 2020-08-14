@@ -1,6 +1,10 @@
 FROM php:7.3-rc-fpm-alpine
 RUN apk update; \
     apk upgrade;
+RUN apk add --no-cache zip libzip-dev
+RUN docker-php-ext-configure zip --with-libzip
+RUN docker-php-ext-install zip
+RUN docker-php-ext-install pdo pdo_mysql 
 RUN docker-php-ext-install mysqli
 RUN apk add freetype libpng libjpeg-turbo freetype-dev libpng-dev libjpeg-turbo-dev
 RUN docker-php-ext-install -j$(nproc) iconv 
