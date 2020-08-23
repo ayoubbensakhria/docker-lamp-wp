@@ -1,6 +1,6 @@
 # DockerLAMPStack
 
-A Complete LAMP stack using docker-compose
+Containerize a LAMP Stack using Docker
 
 ## Usage
 
