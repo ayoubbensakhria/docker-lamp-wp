@@ -6,7 +6,6 @@ Containerize a LAMP Stack using Docker
 
 
 ```bash
-sudo docker-compose up -d
 sudo docker-compose up
 ```
 
